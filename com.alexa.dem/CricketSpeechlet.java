@@ -1,4 +1,4 @@
-package com.alexa.dem;
+package com.amazonaws.dem;
 
 import java.sql.Timestamp;
 import java.time.LocalDate;
@@ -22,19 +22,19 @@ import com.amazon.speech.ui.Reprompt;
 import com.amazon.speech.ui.SimpleCard;
 import com.amazon.speech.speechlet.SpeechletResponse;
 import com.amazon.speech.json.SpeechletRequestEnvelope;
-import com.alexa.services.dynamodbv2.AmazonDynamoDB;
-import com.alexa.services.dynamodbv2.AmazonDynamoDBClient;
-import com.alexa.services.dynamodbv2.AmazonDynamoDBClientBuilder;
-import com.alexa.services.dynamodbv2.datamodeling.DynamoDBMapper;
-import com.alexa.services.dynamodbv2.document.DynamoDB;
-import com.alexa.services.dynamodbv2.document.Item;
-import com.alexa.services.dynamodbv2.document.Table;
-import com.alexa.services.dynamodbv2.model.TableDescription;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import com.amazonaws.services.dynamodbv2.document.DynamoDB;
+import com.amazonaws.services.dynamodbv2.document.Item;
+import com.amazonaws.services.dynamodbv2.document.Table;
+import com.amazonaws.services.dynamodbv2.model.TableDescription;
 
 
 
 /**
- * This project shows how to create a Lambda function for handling Alexa Skill requests that:
+ * This project shows how to create a Lambda function for handling alexa Skill requests that:
  * Can be used to store a player's runs
  * fetch the player's runs
 **/
