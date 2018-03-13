@@ -22,14 +22,14 @@ import com.amazon.speech.ui.Reprompt;
 import com.amazon.speech.ui.SimpleCard;
 import com.amazon.speech.speechlet.SpeechletResponse;
 import com.amazon.speech.json.SpeechletRequestEnvelope;
-import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
-import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
-import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
-import com.amazonaws.services.dynamodbv2.document.DynamoDB;
-import com.amazonaws.services.dynamodbv2.document.Item;
-import com.amazonaws.services.dynamodbv2.document.Table;
-import com.amazonaws.services.dynamodbv2.model.TableDescription;
+import com.alexa.services.dynamodbv2.AmazonDynamoDB;
+import com.alexa.services.dynamodbv2.AmazonDynamoDBClient;
+import com.alexa.services.dynamodbv2.AmazonDynamoDBClientBuilder;
+import com.alexa.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import com.alexa.services.dynamodbv2.document.DynamoDB;
+import com.alexa.services.dynamodbv2.document.Item;
+import com.alexa.services.dynamodbv2.document.Table;
+import com.alexa.services.dynamodbv2.model.TableDescription;
 
 
 
@@ -270,7 +270,7 @@ public class CricketSpeechlet implements Speechlet {
         //logic for getting from DynamoDB
     	AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().build();
     	DynamoDBMapper mapper = new DynamoDBMapper(client);
-    	getRuns=CricketManagerHelpers.getEntry(getPlayer,client);
+    	getRuns=CricketManagerHelpers.getRuns(getPlayer,client);
     	speechText = getRuns+" Runs";
     	// Create the Simple card content.
 			SimpleCard card = new SimpleCard();
