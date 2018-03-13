@@ -1,0 +1,10 @@
+NewEntryIntent add {PlayerName} scored {Runs}
+
+GetEntryIntent How much runs has {PlayerName} scored
+
+ResetIntent clear
+ResetIntent clear table
+ResetIntent reset
+ResetIntent reset table
+
+AMAZON.HelpIntent Help
