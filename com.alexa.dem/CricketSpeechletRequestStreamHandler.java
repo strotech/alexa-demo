@@ -21,7 +21,7 @@ public final class CricketSpeechletRequestStreamHandler extends SpeechletRequest
         supportedApplicationIds.add("<Your application id>");
     }
 
-    public DemoSpeechletRequestStreamHandler() {
-        super(new DemoSpeechlet(), supportedApplicationIds);
+    public CricketSpeechletRequestStreamHandler() {
+        super(new CricketSpeechlet(), supportedApplicationIds);
     }
 }
