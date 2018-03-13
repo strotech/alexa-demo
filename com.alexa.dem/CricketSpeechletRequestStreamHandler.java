@@ -9,7 +9,7 @@ import com.amazon.speech.speechlet.lambda.SpeechletRequestStreamHandler;
  * This class could be the handler for an AWS Lambda function powering an Alexa Skills Kit
  * experience. 
  */
-public final class DemoSpeechletRequestStreamHandler extends SpeechletRequestStreamHandler {
+public final class CricketSpeechletRequestStreamHandler extends SpeechletRequestStreamHandler {
     private static final Set<String> supportedApplicationIds;
 
     static {
