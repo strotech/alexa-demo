@@ -1,4 +1,4 @@
-package com.amazonaws.dem;
+package com.alexa.dem;
 
 import java.sql.Timestamp;
 import java.time.LocalDate;
@@ -90,10 +90,10 @@ public class CricketSpeechlet implements Speechlet {
 
         Intent intent = request.getIntent();
         if ("NewEntryIntent".equals(intent.getName())) {
-            return addNewItemIntentResponse(session, intent);
+            return addNewEntryIntentResponse(session, intent);
 
         } else if ("GetEntryIntent".equals(intent.getName())) {
-            return getSumItemIntentResponse(session, intent);
+            return getEntryIntentResponse(session, intent);
 
         } else if ("AMAZON.HelpIntent".equals(intent.getName())) {
             return getHelpIntentResponse(session, intent);
