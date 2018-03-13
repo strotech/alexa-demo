@@ -246,13 +246,13 @@ public class CricketSpeechlet implements Speechlet {
     }
 
     
-    public SpeechletResponse getEntryResponse(Session session,Intent intent) {
+    public SpeechletResponse getEntryIntentResponse(Session session,Intent intent) {
         try{
     	String getPlayer =
                 intent.getSlot(SLOT_PLAYER_NAME).getValue();
 
     	
-    	
+    	int getRuns=0;
     	String speechText="Get runs";
     	
     				
@@ -271,7 +271,7 @@ public class CricketSpeechlet implements Speechlet {
     	AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().build();
     	DynamoDBMapper mapper = new DynamoDBMapper(client);
     	getRuns=CricketManagerHelpers.getRuns(getPlayer,client);
-    	speechText = getRuns+" Runs";
+    	speechText = Integer.toString(getRuns)+" Runs";
     	// Create the Simple card content.
 			SimpleCard card = new SimpleCard();
 			card.setTitle("Get runs");
