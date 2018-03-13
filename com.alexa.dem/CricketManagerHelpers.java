@@ -1,4 +1,4 @@
-package com.amazonaws.dem;
+package com.alexa.dem;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
