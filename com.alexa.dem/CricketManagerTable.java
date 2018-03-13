@@ -1,4 +1,4 @@
-package com.amazonaws.dem;
+package com.alexa.dem;
 
 import java.util.Date;
 import java.util.Set;
