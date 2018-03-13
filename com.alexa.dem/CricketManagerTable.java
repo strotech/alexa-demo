@@ -32,7 +32,7 @@ public class CricketManagerTable {
     */
 	
     @DynamoDBAttribute(attributeName="DataRuns")  
-    public double getRuns() { return dataValue; }
+    public int getRuns() { return runsValue; }
     public void setRuns(int runsValue) { this.runsValue = runsValue; }
     /*
     @DynamoDBIgnore
