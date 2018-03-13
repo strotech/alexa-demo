@@ -72,12 +72,11 @@ public class CricketManagerHelpers {
         ScanResult scanResult = client.scan(scanRequest);        
         List<Map<String,AttributeValue>> results = scanResult.getItems();
         
-        double sum=0;
-        
+        int runs=0;
         for(Map<String,AttributeValue> map:results){
         	try{
         		AttributeValue rnValue=map.get("DataRuns");
-        		String rnString=amtValue.getS();
+        		String rnString=rnValue.getS();
         		runs=Integer.parseInt(rnString);
         	
         	}catch(Exception e){
