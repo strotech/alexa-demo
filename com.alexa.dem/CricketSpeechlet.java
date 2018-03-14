@@ -137,7 +137,7 @@ public class CricketSpeechlet implements Speechlet {
 		String speechText = "Welcome to the Player data storage system. In this system, you can add the game details of a cricketer in any cricket format. "+
 				"You can say"+
 				"add John has scored 112 runs, "+
-				"get runs scored by John, "+
+				"how much runs has John scored, "+
 				"and so on and so forth.";
 
 		// Create the Simple card content.
